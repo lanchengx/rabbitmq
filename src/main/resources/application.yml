@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: springbot-rabbitmq
+  rabbitmq:
+    host: 152.136.45.47
+    username: root
+    password: 123456
+    port: 5672
+    publisher-confirm-type: correlated #必须配置这个才会确认回调 开启发送失败退回
+    virtual-host: /
+    publisher-returns: true #支持发布返回
